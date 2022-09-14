@@ -16,7 +16,7 @@ function createTimerBlock(time) {
     const colTime = $("<div class = 'col-2 d-flex justify-content-end time-col-time'>").text(timeMoment.format('hA'));
     
     const colTextArea = $("<div class = 'time-col-textarea'>");
-    // Getting saved events so they persist even after refreshing the page
+    // Getting saved events so they persist even after refreshing the page`
     const textArea = $("<textarea cols='80'>").val(localStorage.getItem(time));
     // Real time
     const currentTime = moment();
